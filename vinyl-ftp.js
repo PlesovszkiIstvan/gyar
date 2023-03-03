@@ -10,5 +10,5 @@ var conn = new ftp( {
     secureOptions: {rejectUnauthorized: false}
 });
  
-fs.src( [ './src/**' ], { buffer: false } )
-    .pipe( conn.dest( '/htdocs' ) );
+fs.src( [ './dist/**' ], { buffer: false } )
+    .pipe( conn.dest( '/htdocs/gyar' ) );
